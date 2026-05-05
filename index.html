@@ -1,177 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Image Tools — Resize · Crop · Compress · Convert</title>
-<meta name="description" content="Free online image tools: resize, crop, compress, format convert, rotate, ID photo maker. All processing in your browser, images never uploaded.">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NHL79H3NKK"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-NHL79H3NKK');</script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4467449700945977" crossorigin="anonymous"></script>
-<style>
-:root{--bg:#0f0f0f;--card:#1a1a1a;--text:#e0e0e0;--muted:#888;--accent:#3498db;--ahover:#2980b9;--border:#2a2a2a;--inbg:#252525;--green:#2ecc71}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
-.header{text-align:center;padding:40px 20px 20px}
-.header h1{font-size:2rem;font-weight:700}.header h1 span{color:var(--accent)}
-.header p{color:var(--muted);margin-top:8px;font-size:.95rem}
-.badge{display:inline-block;background:var(--green);color:#000;font-size:.75rem;padding:2px 8px;border-radius:4px;margin-left:8px;font-weight:600}
-.container{max-width:960px;margin:0 auto;padding:0 20px 40px}
-.tabs{display:flex;gap:4px;margin-bottom:24px;background:var(--card);border-radius:12px;padding:4px;overflow-x:auto}
-.tab{white-space:nowrap;padding:12px 14px;text-align:center;cursor:pointer;border-radius:10px;font-size:.85rem;font-weight:500;color:var(--muted);transition:all .2s;border:none;background:none}
-.tab:hover{color:var(--text)}.tab.active{background:var(--inbg);color:var(--accent)}
-.tool-panel{display:none}.tool-panel.active{display:block}
-.card{background:var(--card);border-radius:12px;padding:28px;border:1px solid var(--border);margin-bottom:16px}
-.card h3{font-size:1.1rem;margin-bottom:12px}
-.drop-zone{border:2px dashed var(--border);border-radius:12px;padding:36px 24px;text-align:center;cursor:pointer;transition:all .3s;background:var(--inbg)}
-.drop-zone:hover,.drop-zone.drag-over{border-color:var(--accent);background:rgba(52,152,219,.08)}
-.drop-zone p{color:var(--muted);font-size:.9rem}
-.drop-zone .icon{font-size:2.5rem;display:block;margin-bottom:12px}
-.btn{padding:10px 22px;border-radius:8px;font-size:.9rem;font-weight:500;cursor:pointer;border:none;transition:all .2s}
-.btn-p{background:var(--accent);color:#fff}.btn-p:hover{background:var(--ahover)}.btn-p:disabled{opacity:.4;cursor:not-allowed}
-.btn-s{background:var(--inbg);color:var(--text);border:1px solid var(--border)}.btn-s:hover{background:#333}
-.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:16px}
-.row.btw{justify-content:space-between}
-.progress{width:100%;height:6px;background:var(--inbg);border-radius:3px;margin-top:12px;overflow:hidden;display:none}
-.progress.bar{display:block}.progress .fill{height:100%;background:var(--accent);border-radius:3px;width:0%;transition:width .3s}
-.status{font-size:.85rem;color:var(--muted);margin-top:8px;min-height:20px}
-.result{margin-top:16px;display:none}.result.show{display:block}
-.preview-img{max-width:100%;max-height:400px;border-radius:8px;border:1px solid var(--border);margin-top:12px}
-.input-group{margin-top:12px}.input-group label{display:block;font-size:.85rem;color:var(--muted);margin-bottom:4px}
-.input-group input,.input-group select{width:100%;padding:10px 14px;background:var(--inbg);color:var(--text);border:1px solid var(--border);border-radius:8px;font-size:.9rem;outline:none}
-.input-group input:focus,.input-group select:focus{border-color:var(--accent)}
-.slider{width:100%;accent-color:var(--accent)}
-.footer{text-align:center;padding:20px;color:var(--muted);font-size:.8rem;border-top:1px solid var(--border);margin-top:20px}
-.privacy-note{display:flex;align-items:center;gap:6px;color:var(--green);font-size:.8rem;margin-top:8px}
-@media(max-width:640px){.tabs{flex-wrap:nowrap}.tab{font-size:.75rem;padding:10px 8px}}
-</style>
-</head>
-<body>
-<div class="header"><h1>图片<span>工具箱</span></h1><p>缩放 · 裁剪 · 压缩 · 转换 — 纯浏览器端处理<span class="badge">图片不上传</span></p></div>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Image Tools — Resize · Crop · Compress · Convert</title><meta name="description" content="Free online image tools: resize, crop, compress, format convert, rotate, ID photo. Browser-side processing, images never uploaded."><script async src="https://www.googletagmanager.com/gtag/js?id=G-NHL79H3NKK"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-NHL79H3NKK')</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4467449700945977" crossorigin="anonymous"></script>
+<style>:root{--bg:#0f0f0f;--card:#1a1a1a;--text:#e0e0e0;--muted:#888;--accent:#3498db;--ahover:#2980b9;--border:#2a2a2a;--inbg:#252525;--green:#2ecc71}*{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}.header{text-align:center;padding:30px 20px 10px;position:relative}.header h1{font-size:2rem;font-weight:700}.header h1 span{color:var(--accent)}.header p{color:var(--muted);margin-top:6px;font-size:.9rem}.lang-switch{position:absolute;top:12px;right:20px}.lang-switch select{padding:6px 10px;border-radius:6px;background:var(--inbg);color:var(--text);border:1px solid var(--border);font-size:.8rem;cursor:pointer}.badge{display:inline-block;background:var(--green);color:#000;font-size:.75rem;padding:2px 8px;border-radius:4px;margin-left:8px;font-weight:600}.container{max-width:960px;margin:0 auto;padding:0 20px 40px}.tabs{display:flex;gap:4px;margin-bottom:24px;background:var(--card);border-radius:12px;padding:4px;overflow-x:auto}.tab{white-space:nowrap;padding:12px 14px;cursor:pointer;border-radius:10px;font-size:.85rem;font-weight:500;color:var(--muted);transition:all .2s;border:none;background:none}.tab:hover{color:var(--text)}.tab.active{background:var(--inbg);color:var(--accent)}.panel{display:none}.panel.active{display:block}.card{background:var(--card);border-radius:12px;padding:28px;border:1px solid var(--border);margin-bottom:16px}.card h3{font-size:1.1rem;margin-bottom:12px}.drop-zone{border:2px dashed var(--border);border-radius:12px;padding:36px 24px;text-align:center;cursor:pointer;transition:all .3s;background:var(--inbg)}.drop-zone:hover,.drop-zone.drag-over{border-color:var(--accent);background:rgba(52,152,219,.08)}.drop-zone p{color:var(--muted);font-size:.9rem}.drop-zone .icon{font-size:2.5rem;display:block;margin-bottom:12px}.btn{padding:10px 22px;border-radius:8px;font-size:.9rem;font-weight:500;cursor:pointer;border:none;transition:all .2s}.btn-p{background:var(--accent);color:#fff}.btn-p:hover{background:var(--ahover)}.btn-p:disabled{opacity:.4;cursor:not-allowed}.btn-s{background:var(--inbg);color:var(--text);border:1px solid var(--border)}.btn-s:hover{background:#333}.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:16px}.row.btw{justify-content:space-between}.status{font-size:.85rem;color:var(--muted);margin-top:8px;min-height:20px}.result{margin-top:16px;display:none}.result.show{display:block}.preview-img{max-width:100%;max-height:400px;border-radius:8px;border:1px solid var(--border);margin-top:12px}.input-group{margin-top:12px;flex:1;min-width:150px}.input-group label{display:block;font-size:.85rem;color:var(--muted);margin-bottom:4px}.input-group input,.input-group select{width:100%;padding:10px 14px;background:var(--inbg);color:var(--text);border:1px solid var(--border);border-radius:8px;font-size:.9rem;outline:none}.input-group input:focus,.input-group select:focus{border-color:var(--accent)}.slider{width:100%;accent-color:var(--accent)}.footer{text-align:center;padding:20px;color:var(--muted);font-size:.8rem;border-top:1px solid var(--border);margin-top:20px}.privacy-note{display:flex;align-items:center;gap:6px;color:var(--green);font-size:.8rem;margin-top:8px}@media(max-width:640px){.tabs{flex-wrap:nowrap}.tab{font-size:.75rem;padding:10px 8px}}</style></head><body>
+<div class="lang-switch"><select id="lang-sel" onchange="setLang(this.value)"><option value="en">EN</option><option value="zh">中文</option></select></div>
+<div class="header"><h1>Image <span data-i18n="title">Tools</span></h1><p data-i18n="sub">Resize · Crop · Compress · Convert — browser-side<span class="badge" data-i18n="badge">No upload</span></p></div>
 <div class="container">
-<div class="tabs">
-<button class="tab active" onclick="sw('resize')">📐 缩放</button>
-<button class="tab" onclick="sw('crop')">✂️ 裁剪</button>
-<button class="tab" onclick="sw('compress')">🗜️ 压缩</button>
-<button class="tab" onclick="sw('convert')">🔄 格式转换</button>
-<button class="tab" onclick="sw('rotate')">🔄 旋转翻转</button>
-<button class="tab" onclick="sw('idphoto')">📸 证件照</button>
-</div>
-
-<!-- Resize -->
-<div id="resize-panel" class="tool-panel active">
-<div class="card"><h3>📐 缩放图片</h3>
-<div class="drop-zone" id="resize-drop" onclick="d('resize-file-input').click()"><span class="icon">📷</span><p>点击选择图片 或 拖拽到此处</p></div>
-<input type="file" id="resize-file-input" accept="image/*" hidden onchange="loadImg('resize',this.files[0])">
-<img class="preview-img" id="resize-preview" style="display:none">
-<div class="row"><div class="input-group" style="flex:1"><label>宽度 (px)</label><input type="number" id="resize-w" placeholder="自动" min="1"></div><div class="input-group" style="flex:1"><label>高度 (px)</label><input type="number" id="resize-h" placeholder="自动" min="1"></div></div>
-<div class="row"><label><input type="checkbox" id="resize-lock" checked onchange="lockRatio('resize')"> 锁定比例</label></div>
-<div class="row"><button class="btn btn-p" id="resize-btn" disabled onclick="resizeImg()">缩放</button></div>
-<div class="status" id="resize-status"></div>
-<div class="result" id="resize-result"></div>
-</div></div>
-
-<!-- Crop -->
-<div id="crop-panel" class="tool-panel">
-<div class="card"><h3>✂️ 裁剪图片</h3>
-<div class="drop-zone" id="crop-drop" onclick="d('crop-file-input').click()"><span class="icon">✂️</span><p>选择图片后拖拽选取裁剪区域</p></div>
-<input type="file" id="crop-file-input" accept="image/*" hidden onchange="initCrop(this.files[0])">
-<div style="position:relative;display:none;margin-top:12px" id="crop-container">
-<canvas id="crop-canvas" style="max-width:100%;border-radius:8px;cursor:crosshair"></canvas>
-</div>
-<div class="row"><button class="btn btn-p" id="crop-btn" disabled onclick="doCrop()">裁剪选中区域</button></div>
-<div class="status" id="crop-status"></div>
-<div class="result" id="crop-result"></div>
-</div></div>
-
-<!-- Compress -->
-<div id="compress-panel" class="tool-panel">
-<div class="card"><h3>🗜️ 压缩图片</h3>
-<div class="drop-zone" id="compress-drop" onclick="d('compress-file-input').click()"><span class="icon">📉</span><p>点击选择图片</p></div>
-<input type="file" id="compress-file-input" accept="image/*" hidden onchange="loadImg('compress',this.files[0])">
-<div class="input-group"><label>压缩质量：<span id="compress-ql">70%</span></label><input type="range" class="slider" id="compress-q" min="5" max="100" value="70" oninput="d('compress-ql').textContent=this.value+'%'"></div>
-<div class="row"><button class="btn btn-p" id="compress-btn" disabled onclick="compressImg()">压缩</button></div>
-<div class="status" id="compress-status"></div>
-<div class="result" id="compress-result"></div>
-</div></div>
-
-<!-- Format Convert -->
-<div id="convert-panel" class="tool-panel">
-<div class="card"><h3>🔄 格式转换</h3>
-<div class="drop-zone" id="convert-drop" onclick="d('convert-file-input').click()"><span class="icon">🔄</span><p>点击选择图片 支持批量</p></div>
-<input type="file" id="convert-file-input" accept="image/*" multiple hidden onchange="loadImgs('convert',this.files)">
-<div class="input-group"><label>目标格式</label><select id="convert-fmt"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WebP</option></select></div>
-<div class="input-group"><label>质量 (JPG/WebP)</label><input type="range" class="slider" id="convert-q" min="10" max="100" value="90" oninput="d('convert-ql').textContent=this.value+'%'"><span id="convert-ql">90%</span></div>
-<div class="row"><button class="btn btn-p" id="convert-btn" disabled onclick="convertFmt()">转换</button></div>
-<div class="status" id="convert-status"></div>
-<div class="result" id="convert-result"></div>
-</div></div>
-
-<!-- Rotate -->
-<div id="rotate-panel" class="tool-panel">
-<div class="card"><h3>🔄 旋转 & 翻转</h3>
-<div class="drop-zone" id="rotate-drop" onclick="d('rotate-file-input').click()"><span class="icon">🔄</span><p>选择图片</p></div>
-<input type="file" id="rotate-file-input" accept="image/*" hidden onchange="loadImg('rotate',this.files[0])">
-<img class="preview-img" id="rotate-preview" style="display:none">
-<div class="row"><button class="btn btn-s" onclick="rotateImg(90)">↻ 90°</button><button class="btn btn-s" onclick="rotateImg(-90)">↺ -90°</button><button class="btn btn-s" onclick="rotateImg(180)">↻ 180°</button><button class="btn btn-s" onclick="flipImg('h')">↔ 水平翻转</button><button class="btn btn-s" onclick="flipImg('v')">↕ 垂直翻转</button></div>
-<div class="status" id="rotate-status"></div>
-</div></div>
-
-<!-- ID Photo -->
-<div id="idphoto-panel" class="tool-panel">
-<div class="card"><h3>📸 证件照裁剪</h3>
-<div class="drop-zone" id="idphoto-drop" onclick="d('idphoto-file-input').click()"><span class="icon">📸</span><p>选择照片</p></div>
-<input type="file" id="idphoto-file-input" accept="image/*" hidden onchange="loadImg('idphoto',this.files[0])">
-<div class="input-group"><label>尺寸预设</label><select id="idphoto-preset" onchange="setIdPreset()"><option value="25x35">一寸 (25×35mm)</option><option value="35x49">二寸 (35×49mm)</option><option value="35x45">护照 (35×45mm)</option><option value="51x51">美国签证 (51×51mm)</option><option value="custom">自定义</option></select></div>
-<div class="row"><div class="input-group" style="flex:1"><label>宽 (mm)</label><input type="number" id="idphoto-w" value="25" min="1"></div><div class="input-group" style="flex:1"><label>高 (mm)</label><input type="number" id="idphoto-h" value="35" min="1"></div></div>
-<div class="row"><button class="btn btn-p" id="idphoto-btn" disabled onclick="makeIdPhoto()">生成证件照</button></div>
-<div class="status" id="idphoto-status"></div>
-<div class="result" id="idphoto-result"></div>
-</div></div>
-
-<p class="privacy-note">🔒 所有处理均在浏览器本地完成，图片不会上传到任何服务器</p>
-</div>
-<div class="footer"><p>图片工具箱 · 免费在线工具 · 隐私安全</p></div>
-
+<div class="tabs"><button class="tab active" data-i18n="t_resize" onclick="sw('resize')">📐 Resize</button><button class="tab" data-i18n="t_crop" onclick="sw('crop')">✂️ Crop</button><button class="tab" data-i18n="t_compress" onclick="sw('compress')">🗜️ Compress</button><button class="tab" data-i18n="t_convert" onclick="sw('convert')">🔄 Convert</button><button class="tab" data-i18n="t_rotate" onclick="sw('rotate')">↻ Rotate</button><button class="tab" data-i18n="t_id" onclick="sw('idphoto')">📸 ID Photo</button></div>
+<div id="resize-panel" class="panel active"><div class="card"><h3>📐 <span data-i18n="resize_t">Resize Image</span></h3>
+<div class="drop-zone" id="r-drop" onclick="d('r-file').click()"><span class="icon">📷</span><p data-i18n="resize_d">Click to select or drag an image</p></div>
+<input type="file" id="r-file" accept="image/*" hidden onchange="loadImg('resize',this.files[0])">
+<img class="preview-img" id="r-preview" style="display:none">
+<div class="row"><div class="input-group"><label data-i18n="w_label">Width (px)</label><input type="number" id="r-w" placeholder="Auto" min="1"></div><div class="input-group"><label data-i18n="h_label">Height (px)</label><input type="number" id="r-h" placeholder="Auto" min="1"></div></div>
+<div class="row"><label><input type="checkbox" id="r-lock" checked onchange="lkR()"><span data-i18n="lock">Lock aspect ratio</span></label></div>
+<div class="row"><button class="btn btn-p" id="r-btn" disabled data-i18n="resize_btn" onclick="resizeImg()">Resize</button></div>
+<div class="status" id="r-status"></div><div class="result" id="r-result"></div></div></div>
+<div id="crop-panel" class="panel"><div class="card"><h3>✂️ <span data-i18n="crop_t">Crop Image</span></h3>
+<div class="drop-zone" id="c-drop" onclick="d('c-file').click()"><span class="icon">✂️</span><p data-i18n="crop_d">Select image then drag to select crop area</p></div>
+<input type="file" id="c-file" accept="image/*" hidden onchange="initCrop(this.files[0])">
+<div style="position:relative;display:none;margin-top:12px" id="c-container"><canvas id="c-canvas" style="max-width:100%;border-radius:8px;cursor:crosshair"></canvas></div>
+<div class="row"><button class="btn btn-p" id="c-btn" disabled data-i18n="crop_btn" onclick="doCrop()">Crop Selection</button></div>
+<div class="status" id="c-status"></div><div class="result" id="c-result"></div></div></div>
+<div id="compress-panel" class="panel"><div class="card"><h3>🗜️ <span data-i18n="comp_t">Compress Image</span></h3>
+<div class="drop-zone" id="comp-drop" onclick="d('comp-file').click()"><span class="icon">📉</span><p data-i18n="comp_d">Select an image</p></div>
+<input type="file" id="comp-file" accept="image/*" hidden onchange="loadImg('compress',this.files[0])">
+<div class="input-group"><label data-i18n="quality_l">Quality: <span id="comp-ql">70%</span></label><input type="range" class="slider" id="comp-q" min="5" max="100" value="70" oninput="d('comp-ql').textContent=this.value+'%'"></div>
+<div class="row"><button class="btn btn-p" id="comp-btn" disabled data-i18n="comp_btn" onclick="compressImg()">Compress</button></div>
+<div class="status" id="comp-status"></div><div class="result" id="comp-result"></div></div></div>
+<div id="convert-panel" class="panel"><div class="card"><h3>🔄 <span data-i18n="conv_t">Format Convert</span></h3>
+<div class="drop-zone" id="conv-drop" onclick="d('conv-file').click()"><span class="icon">🔄</span><p data-i18n="conv_d">Select images — batch supported</p></div>
+<input type="file" id="conv-file" accept="image/*" multiple hidden onchange="loadImgs('convert',this.files)">
+<div class="input-group"><label data-i18n="fmt_l">Target Format</label><select id="conv-fmt"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WebP</option></select></div>
+<div class="input-group"><label data-i18n="q_l">Quality (JPG/WebP)</label><input type="range" class="slider" id="conv-q" min="10" max="100" value="90" oninput="d('conv-ql').textContent=this.value+'%'"><span id="conv-ql">90%</span></div>
+<div class="row"><button class="btn btn-p" id="conv-btn" disabled data-i18n="conv_btn" onclick="convertFmt()">Convert</button></div>
+<div class="status" id="conv-status"></div><div class="result" id="conv-result"></div></div></div>
+<div id="rotate-panel" class="panel"><div class="card"><h3>↻ <span data-i18n="rot_t">Rotate & Flip</span></h3>
+<div class="drop-zone" id="rot-drop" onclick="d('rot-file').click()"><span class="icon">↻</span><p data-i18n="rot_d">Select an image</p></div>
+<input type="file" id="rot-file" accept="image/*" hidden onchange="loadImg('rotate',this.files[0])">
+<img class="preview-img" id="rot-preview" style="display:none">
+<div class="row"><button class="btn btn-s" onclick="rotateImg(90)">↻ 90°</button><button class="btn btn-s" onclick="rotateImg(-90)">↺ -90°</button><button class="btn btn-s" onclick="rotateImg(180)">↻ 180°</button><button class="btn btn-s" onclick="flipImg('h')">↔ Flip H</button><button class="btn btn-s" onclick="flipImg('v')">↕ Flip V</button></div>
+<div class="status" id="rot-status"></div><div class="result" id="rot-result"></div></div></div>
+<div id="idphoto-panel" class="panel"><div class="card"><h3>📸 <span data-i18n="id_t">ID Photo Maker</span></h3>
+<div class="drop-zone" id="id-drop" onclick="d('id-file').click()"><span class="icon">📸</span><p data-i18n="id_d">Select a photo</p></div>
+<input type="file" id="id-file" accept="image/*" hidden onchange="loadImg('idphoto',this.files[0])">
+<div class="input-group"><label data-i18n="id_preset">Size Preset</label><select id="id-preset" onchange="setIdP()"><option value="25x35">1 inch (25×35mm)</option><option value="35x49">2 inch (35×49mm)</option><option value="35x45">Passport (35×45mm)</option><option value="51x51">US Visa (51×51mm)</option><option value="custom">Custom</option></select></div>
+<div class="row"><div class="input-group"><label data-i18n="id_w">Width (mm)</label><input type="number" id="id-w" value="25" min="1"></div><div class="input-group"><label data-i18n="id_h">Height (mm)</label><input type="number" id="id-h" value="35" min="1"></div></div>
+<div class="row"><button class="btn btn-p" id="id-btn" disabled data-i18n="id_btn" onclick="makeId()">Generate</button></div>
+<div class="status" id="id-status"></div><div class="result" id="id-result"></div></div></div>
+<p class="privacy-note" data-i18n="privacy">🔒 All processing done locally. Images never uploaded.</p></div>
+<div class="footer"><p>Image Tools · Free Online · Privacy Safe</p></div>
 <script>
-const S={resize:{img:null,origW:0,origH:0},crop:{img:null,startX:0,startY:0,endX:0,endY:0,dragging:false},compress:{img:null},convert:{imgs:[]},rotate:{img:null,angle:0,flipH:false,flipV:false},idphoto:{img:null}};
-const d=id=>document.getElementById(id);
-function sw(n){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.tool-panel').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.tab')[['resize','crop','compress','convert','rotate','idphoto'].indexOf(n)].classList.add('active');d(n+'-panel').classList.add('active')}
-function fmt(b){return b<1024?b+'B':b<1048576?(b/1024).toFixed(1)+'KB':(b/1048576).toFixed(1)+'MB'}
-function loadImg(type,file){if(!file)return;const reader=new FileReader();reader.onload=()=>{const img=new Image();img.onload=()=>{S[type].img=img;if(type==='resize'){S.resize.origW=img.width;S.resize.origH=img.height;d('resize-w').value=img.width;d('resize-h').value=img.height;d('resize-preview').src=reader.result;d('resize-preview').style.display='block'};if(type==='rotate'){S.rotate.angle=0;S.rotate.flipH=false;S.rotate.flipV=false;d('rotate-preview').src=reader.result;d('rotate-preview').style.display='block'};if(type==='compress'){d('compress-btn').disabled=false;d('compress-status').textContent='原图: '+fmt(file.size)};if(type==='idphoto'){d('idphoto-btn').disabled=false;d('idphoto-status').textContent='已加载: '+img.width+'×'+img.height};d(type+'-btn')&&(d(type+'-btn').disabled=false)};img.src=reader.result};reader.readAsDataURL(file)}
-function loadImgs(type,files){S[type].imgs=Array.from(files);d(type+'-btn').disabled=S[type].imgs.length<1;d(type+'-status').textContent=S[type].imgs.length+' 张图片'}
-
-// Resize
-function lockRatio(type){if(d('resize-lock').checked&&S.resize.origW){d('resize-h').value=Math.round(d('resize-w').value*S.resize.origH/S.resize.origW)}}
-d('resize-w').addEventListener('input',()=>{if(d('resize-lock').checked&&S.resize.origW)d('resize-h').value=Math.round(d('resize-w').value*S.resize.origH/S.resize.origW)});
-function resizeImg(){const w=parseInt(d('resize-w').value),h=parseInt(d('resize-h').value);if(!w||!h)return;const c=document.createElement('canvas');c.width=w;c.height=h;c.getContext('2d').drawImage(S.resize.img,0,0,w,h);showDownload('resize',c.toDataURL('image/jpeg',.95),'resized.jpg')}
-
-// Crop
-let cropCtx;
-function initCrop(file){if(!file)return;const reader=new FileReader();reader.onload=()=>{const img=new Image();img.onload=()=>{S.crop.img=img;const cv=d('crop-canvas');cv.width=img.width;cv.height=img.height;cropCtx=cv.getContext('2d');cropCtx.drawImage(img,0,0);d('crop-container').style.display='block';d('crop-btn').disabled=false;d('crop-status').textContent='拖拽选取裁剪区域'};img.src=reader.result};reader.readAsDataURL(file)}
-d('crop-canvas')?.addEventListener('mousedown',e=>{const r=d('crop-canvas').getBoundingClientRect();S.crop.startX=(e.clientX-r.left)*(S.crop.img.width/r.width);S.crop.startY=(e.clientY-r.top)*(S.crop.img.height/r.height);S.crop.dragging=true});
-d('crop-canvas')?.addEventListener('mousemove',e=>{if(!S.crop.dragging||!cropCtx)return;const r=d('crop-canvas').getBoundingClientRect();S.crop.endX=(e.clientX-r.left)*(S.crop.img.width/r.width);S.crop.endY=(e.clientY-r.top)*(S.crop.img.height/r.height);redrawCrop()});
-d('crop-canvas')?.addEventListener('mouseup',()=>{S.crop.dragging=false});
-function redrawCrop(){if(!cropCtx)return;cropCtx.clearRect(0,0,S.crop.img.width,S.crop.img.height);cropCtx.drawImage(S.crop.img,0,0);cropCtx.fillStyle='rgba(0,0,0,.4)';cropCtx.fillRect(0,0,S.crop.img.width,S.crop.img.height);const x=Math.min(S.crop.startX,S.crop.endX),y=Math.min(S.crop.startY,S.crop.endY),w=Math.abs(S.crop.endX-S.crop.startX),h=Math.abs(S.crop.endY-S.crop.startY);cropCtx.clearRect(x,y,w,h);cropCtx.drawImage(S.crop.img,x,y,w,h,x,y,w,h);cropCtx.strokeStyle='#3498db';cropCtx.lineWidth=2;cropCtx.strokeRect(x,y,w,h)}
-function doCrop(){const x=Math.min(S.crop.startX,S.crop.endX),y=Math.min(S.crop.startY,S.crop.endY),w=Math.abs(S.crop.endX-S.crop.startX),h=Math.abs(S.crop.endY-S.crop.startY);if(w<5||h<5){d('crop-status').textContent='请先选取裁剪区域';return}const c=document.createElement('canvas');c.width=w;c.height=h;c.getContext('2d').drawImage(S.crop.img,x,y,w,h,0,0,w,h);showDownload('crop',c.toDataURL(),'cropped.jpg')}
-
-// Compress
-function compressImg(){const q=parseInt(d('compress-q').value)/100;const c=document.createElement('canvas');c.width=S.compress.img.width;c.height=S.compress.img.height;c.getContext('2d').drawImage(S.compress.img,0,0);const url=c.toDataURL('image/jpeg',q);const orig=d('compress-status').textContent.match(/原图: (.+)/)?.[1]||'?';showDownload('compress',url,'compressed.jpg');d('compress-status').textContent='压缩完成 (质量 '+Math.round(q*100)+'%)'}
-
-// Convert
-function convertFmt(){const fmt=d('convert-fmt').value;const q=parseInt(d('convert-q').value)/100;const ext={imageType:{'image/jpeg':'jpg','image/png':'png','image/webp':'webp'}};S.convert.imgs.forEach((f,i)=>{const reader=new FileReader();reader.onload=()=>{const img=new Image();img.onload=()=>{const c=document.createElement('canvas');c.width=img.width;c.height=img.height;c.getContext('2d').drawImage(img,0,0);const url=c.toDataURL(fmt,q);dl(url,f.name.replace(/\.[^.]+$/,'.'+({'image/jpeg':'jpg','image/png':'png','image/webp':'webp'}[fmt])))};img.src=reader.result};reader.readAsDataURL(f)});d('convert-status').textContent='✅ 已转换 '+S.convert.imgs.length+' 张图片'}
-function dl(url,name){const a=document.createElement('a');a.href=url;a.download=name;a.click()}
-
-// Rotate
-function rotateImg(deg){S.rotate.angle=(S.rotate.angle+deg)%360;if(S.rotate.angle<0)S.rotate.angle+=360;applyRotate()}
-function flipImg(dir){if(dir==='h')S.rotate.flipH=!S.rotate.flipH;else S.rotate.flipV=!S.rotate.flipV;applyRotate()}
-function applyRotate(){const img=S.rotate.img;const c=document.createElement('canvas');if(S.rotate.angle===90||S.rotate.angle===270){c.width=img.height;c.height=img.width}else{c.width=img.width;c.height=img.height}const ctx=c.getContext('2d');ctx.translate(c.width/2,c.height/2);ctx.rotate(S.rotate.angle*Math.PI/180);ctx.scale(S.rotate.flipH?-1:1,S.rotate.flipV?-1:1);ctx.drawImage(img,-img.width/2,-img.height/2);d('rotate-preview').src=c.toDataURL();S.rotate.result=c.toDataURL('image/jpeg',.95)}
-
-// ID Photo
-function setIdPreset(){const v=d('idphoto-preset').value;if(v==='custom')return;const[w,h]=v.split('x').map(Number);d('idphoto-w').value=w;d('idphoto-h').value=h}
-function makeIdPhoto(){const w=parseInt(d('idphoto-w').value),h=parseInt(d('idphoto-h').value);const dpi=300,mmToPx=mm=>Math.round(mm/25.4*dpi);const pw=mmToPx(w),ph=mmToPx(h);const c=document.createElement('canvas');c.width=pw;c.height=ph;const ctx=c.getContext('2d');const ratio=Math.min(pw/S.idphoto.img.width,ph/S.idphoto.img.height);const iw=S.idphoto.img.width*ratio,ih=S.idphoto.img.height*ratio;ctx.fillStyle='#ffffff';ctx.fillRect(0,0,pw,ph);ctx.drawImage(S.idphoto.img,(pw-iw)/2,(ph-ih)/2,iw,ih);showDownload('idphoto',c.toDataURL('image/jpeg',.95),`idphoto_${w}x${h}mm.jpg`)}
-
-function showDownload(type,url,name){d(type+'-result').innerHTML=`<img src="${url}" class="preview-img"><br><button class="btn btn-p" onclick="dl('${url.replace(/'/g,"\\'")}','${name}')">⬇ 下载</button>`;d(type+'-result').classList.add('show')}
-</script>
-</body>
-</html>
+const I18N={en:{title:"Tools",sub:"Resize · Crop · Compress · Convert — browser-side",badge:"No upload",t_resize:"📐 Resize",t_crop:"✂️ Crop",t_compress:"🗜️ Compress",t_convert:"🔄 Convert",t_rotate:"↻ Rotate",t_id:"📸 ID Photo",resize_t:"Resize Image",resize_d:"Click to select or drag an image",w_label:"Width (px)",h_label:"Height (px)",lock:"Lock aspect ratio",resize_btn:"Resize",crop_t:"Crop Image",crop_d:"Select image then drag to select crop area",crop_btn:"Crop Selection",comp_t:"Compress Image",comp_d:"Select an image",quality_l:"Quality:",comp_btn:"Compress",conv_t:"Format Convert",conv_d:"Select images — batch supported",fmt_l:"Target Format",q_l:"Quality (JPG/WebP)",conv_btn:"Convert",rot_t:"Rotate & Flip",rot_d:"Select an image",id_t:"ID Photo Maker",id_d:"Select a photo",id_preset:"Size Preset",id_w:"Width (mm)",id_h:"Height (mm)",id_btn:"Generate",privacy:"🔒 All processing done locally. Images never uploaded."},
+zh:{title:"工具箱",sub:"缩放 · 裁剪 · 压缩 · 转换 — 纯浏览器端",badge:"图片不上传",t_resize:"📐 缩放",t_crop:"✂️ 裁剪",t_compress:"🗜️ 压缩",t_convert:"🔄 格式转换",t_rotate:"↻ 旋转",t_id:"📸 证件照",resize_t:"缩放图片",resize_d:"点击选择或拖拽图片",w_label:"宽度 (px)",h_label:"高度 (px)",lock:"锁定比例",resize_btn:"缩放",crop_t:"裁剪图片",crop_d:"选择图片后拖拽选取裁剪区域",crop_btn:"裁剪",comp_t:"压缩图片",comp_d:"选择图片",quality_l:"压缩质量：",comp_btn:"压缩",conv_t:"格式转换",conv_d:"选择图片 — 支持批量",fmt_l:"目标格式",q_l:"质量 (JPG/WebP)",conv_btn:"转换",rot_t:"旋转 & 翻转",rot_d:"选择图片",id_t:"证件照裁剪",id_d:"选择照片",id_preset:"尺寸预设",id_w:"宽 (mm)",id_h:"高 (mm)",id_btn:"生成",privacy:"🔒 所有处理均在浏览器本地完成，图片不会上传。"}};
+let L='en';function t(k){return I18N[L][k]||k}function setLang(l){L=l;d('lang-sel').value=l;d('html').lang=l;document.querySelectorAll('[data-i18n]').forEach(e=>{const k=e.getAttribute('data-i18n');e.textContent=I18N[L][k]||k})}
+d=id=>document.getElementById(id);function sw(n){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.tab')[['resize','crop','compress','convert','rotate','idphoto'].indexOf(n)].classList.add('active');d(n+'-panel').classList.add('active')}
+const S={resize:{img:null,ow:0,oh:0},crop:{img:null,sx:0,sy:0,ex:0,ey:0,dr:false},compress:{img:null,file:null},convert:{imgs:[]},rotate:{img:null,a:0,fh:false,fv:false},idphoto:{img:null}};
+function loadImg(type,file){if(!file)return;const r=new FileReader();r.onload=()=>{const img=new Image();img.onload=()=>{S[type].img=img;if(type==='resize'){S.resize.ow=img.width;S.resize.oh=img.height;d('r-w').value=img.width;d('r-h').value=img.height;d('r-preview').src=r.result;d('r-preview').style.display='block'};if(type==='rotate'){S.rotate.a=0;S.rotate.fh=false;S.rotate.fv=false;d('rot-preview').src=r.result;d('rot-preview').style.display='block'};if(type==='compress'){S.compress.file=file;d('comp-status').textContent='Original: '+fs(file.size)};if(type==='idphoto')d('id-status').textContent='Loaded: '+img.width+'×'+img.height;d(type.charAt(0)+'-btn')&&(d(type.charAt(0)+'-btn').disabled=false)};img.src=r.result};r.readAsDataURL(file)}
+function loadImgs(type,files){S[type].imgs=Array.from(files);d('conv-btn').disabled=S[type].imgs.length<1;d('conv-status').textContent=S[type].imgs.length+' images'}
+function lkR(){if(d('r-lock').checked&&S.resize.ow)d('r-h').value=Math.round(d('r-w').value*S.resize.oh/S.resize.ow)}
+d('r-w').addEventListener('input',()=>{if(d('r-lock').checked&&S.resize.ow)d('r-h').value=Math.round(d('r-w').value*S.resize.oh/S.resize.ow)});
+function resizeImg(){const w=parseInt(d('r-w').value),h=parseInt(d('r-h').value);if(!w||!h)return;const c=document.createElement('canvas');c.width=w;c.height=h;c.getContext('2d').drawImage(S.resize.img,0,0,w,h);showDL('r',c.toDataURL('image/jpeg',.95),'resized.jpg')}
+let cropCtx;function initCrop(file){if(!file)return;const r=new FileReader();r.onload=()=>{const img=new Image();img.onload=()=>{S.crop.img=img;const cv=d('c-canvas');cv.width=img.width;cv.height=img.height;cropCtx=cv.getContext('2d');cropCtx.drawImage(img,0,0);d('c-container').style.display='block';d('c-btn').disabled=false;d('c-status').textContent='Drag to select crop area'};img.src=r.result};r.readAsDataURL(file)}
+d('c-canvas')?.addEventListener('mousedown',e=>{const r=d('c-canvas').getBoundingClientRect();S.crop.sx=(e.clientX-r.left)*(S.crop.img.width/r.width);S.crop.sy=(e.clientY-r.top)*(S.crop.img.height/r.height);S.crop.dr=true});
+d('c-canvas')?.addEventListener('mousemove',e=>{if(!S.crop.dr||!cropCtx)return;const r=d('c-canvas').getBoundingClientRect();S.crop.ex=(e.clientX-r.left)*(S.crop.img.width/r.width);S.crop.ey=(e.clientY-r.top)*(S.crop.img.height/r.height);redrawCrop()});
+d('c-canvas')?.addEventListener('mouseup',()=>{S.crop.dr=false});
+function redrawCrop(){if(!cropCtx)return;cropCtx.clearRect(0,0,S.crop.img.width,S.crop.img.height);cropCtx.drawImage(S.crop.img,0,0);cropCtx.fillStyle='rgba(0,0,0,.4)';cropCtx.fillRect(0,0,S.crop.img.width,S.crop.img.height);const x=Math.min(S.crop.sx,S.crop.ex),y=Math.min(S.crop.sy,S.crop.ey),w=Math.abs(S.crop.ex-S.crop.sx),h=Math.abs(S.crop.ey-S.crop.sy);cropCtx.clearRect(x,y,w,h);cropCtx.drawImage(S.crop.img,x,y,w,h,x,y,w,h);cropCtx.strokeStyle='#3498db';cropCtx.lineWidth=2;cropCtx.strokeRect(x,y,w,h)}
+function doCrop(){const x=Math.min(S.crop.sx,S.crop.ex),y=Math.min(S.crop.sy,S.crop.ey),w=Math.abs(S.crop.ex-S.crop.sx),h=Math.abs(S.crop.ey-S.crop.sy);if(w<5||h<5){d('c-status').textContent='Please select a crop area first';return}const c=document.createElement('canvas');c.width=w;c.height=h;c.getContext('2d').drawImage(S.crop.img,x,y,w,h,0,0,w,h);showDL('c',c.toDataURL(),'cropped.jpg')}
+function compressImg(){const q=parseInt(d('comp-q').value)/100;const c=document.createElement('canvas');c.width=S.compress.img.width;c.height=S.compress.img.height;c.getContext('2d').drawImage(S.compress.img,0,0);const url=c.toDataURL('image/jpeg',q);showDL('comp',url,'compressed.jpg');d('comp-status').textContent='Compressed (quality '+Math.round(q*100)+'%)'}
+function convertFmt(){const fmt=d('conv-fmt').value,q=parseInt(d('conv-q').value)/100;S.convert.imgs.forEach((f,i)=>{const r=new FileReader();r.onload=()=>{const img=new Image();img.onload=()=>{const c=document.createElement('canvas');c.width=img.width;c.height=img.height;c.getContext('2d').drawImage(img,0,0);dl(c.toDataURL(fmt,q),f.name.replace(/\.[^.]+$/,'.'+({imageType:{'image/jpeg':'jpg','image/png':'png','image/webp':'webp'}})))}};img.src=r.result};r.readAsDataURL(f)});d('conv-status').textContent='✅ Converted '+S.convert.imgs.length+' images'}
+function rotateImg(deg){S.rotate.a=(S.rotate.a+deg)%360;if(S.rotate.a<0)S.rotate.a+=360;applyRot()}function flipImg(dir){if(dir==='h')S.rotate.fh=!S.rotate.fh;else S.rotate.fv=!S.rotate.fv;applyRot()}
+function applyRot(){const img=S.rotate.img;const c=document.createElement('canvas');if(S.rotate.a===90||S.rotate.a===270){c.width=img.height;c.height=img.width}else{c.width=img.width;c.height=img.height}const ctx=c.getContext('2d');ctx.translate(c.width/2,c.height/2);ctx.rotate(S.rotate.a*Math.PI/180);ctx.scale(S.rotate.fh?-1:1,S.rotate.fv?-1:1);ctx.drawImage(img,-img.width/2,-img.height/2);d('rot-preview').src=c.toDataURL();S.rotate.result=c.toDataURL('image/jpeg',.95)}
+function setIdP(){const v=d('id-preset').value;if(v==='custom')return;const[w,h]=v.split('x').map(Number);d('id-w').value=w;d('id-h').value=h}
+function makeId(){const w=parseInt(d('id-w').value),h=parseInt(d('id-h').value),dpi=300,mm2px=mm=>Math.round(mm/25.4*dpi);const pw=mm2px(w),ph=mm2px(h);const c=document.createElement('canvas');c.width=pw;c.height=ph;const ctx=c.getContext('2d');const ratio=Math.min(pw/S.idphoto.img.width,ph/S.idphoto.img.height);const iw=S.idphoto.img.width*ratio,ih=S.idphoto.img.height*ratio;ctx.fillStyle='#fff';ctx.fillRect(0,0,pw,ph);ctx.drawImage(S.idphoto.img,(pw-iw)/2,(ph-ih)/2,iw,ih);showDL('id',c.toDataURL('image/jpeg',.95),`idphoto_${w}x${h}mm.jpg`)}
+function showDL(tp,url,name){d(tp+'-result').innerHTML=`<img src="${url}" class="preview-img"><br><button class="btn btn-p" onclick="dl('${url}','${name}')">⬇ Download</button>`;d(tp+'-result').classList.add('show')}
+function dl(url,name){const a=document.createElement('a');a.href=url;a.download=name;a.click()}function fs(b){return b<1024?b+'B':b<1048576?(b/1024).toFixed(1)+'KB':(b/1048576).toFixed(1)+'MB'}
+</script></body></html>
